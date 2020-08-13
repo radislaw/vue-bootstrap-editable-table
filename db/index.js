@@ -84,14 +84,14 @@ function database(tableName) {
   function filter(query) {
     if (Object.keys(query).length) {
       return datas.filter(el => {
-        let comparsion = false;
+        let comparision = false;
         for (const key in query) {
           if (el.hasOwnProperty(key) && el[key] === query[key]) {
-            comparsion = true;
+            comparision = true;
           }
         }
 
-        return comparsion;
+        return comparision;
       });
     } else {
       return datas;

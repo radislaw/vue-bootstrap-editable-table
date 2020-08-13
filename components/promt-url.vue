@@ -1,8 +1,8 @@
 <template>
   <b-modal
-    id="modal-promt-url"
-    ref="modal-promt-url"
-    title="Enter HTTP image addres"
+    id="modal-prompt-url"
+    ref="modal-prompt-url"
+    title="Enter HTTP image address"
     @show="resetModal"
     @hidden="resetModal"
     @ok="handleOk"
