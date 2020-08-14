@@ -32,6 +32,10 @@ export const isCorrectUrl = val => {
   return (val.match(regex) !== null);
 };
 
+export const isCorrectDate = val => {
+  return true
+}
+
 export const formatFloat = value => {
   let formatValue = new Intl.NumberFormat('en-EN').format(value, {
     useGrouping: true,
@@ -56,6 +60,7 @@ export const validateType = (type, value) => {
     case 'text': return isString(value);
     case 'number': return isNumber(value);
     case 'image': return isCorrectUrl(value);
+    case 'date': return isCorrectDate(value);
     default: return true;
   }
 };

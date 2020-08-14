@@ -21,6 +21,7 @@
         <b-dropdown-item href="#" @click="$emit('add-col', 'text')">Text</b-dropdown-item>
         <b-dropdown-item href="#" @click="$emit('add-col', 'image')">Image</b-dropdown-item>
         <b-dropdown-item href="#" @click="$emit('add-col', 'number')">Number</b-dropdown-item>
+        <b-dropdown-item href="#" @click="$emit('add-col', 'date')">Date</b-dropdown-item>
       </b-dropdown>
 
       <icon-button style="margin-left: 10px;" @click="$emit('delete-mode', !deleteMode)" />
